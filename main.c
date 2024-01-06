@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "types.h"
-#include "virtio.h"
+#include "virtio/virtio.h"
 #include "pci/pci.h"
 
 const u16 PCI_VENDOR_ID_VIRTIO = 0x1AF4;
