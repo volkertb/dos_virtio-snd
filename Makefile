@@ -1,4 +1,7 @@
-# SPDX-License-Identifier: TODO
+# SPDX-FileType: SOURCE
+# SPDX-FileCopyrightText: Copyright (C) 2024 Volkert de Buisonjé
+# SPDX-FileContributor: Volkert de Buisonjé
+# SPDX-License-Identifier: Apache-2.0
 
 virtsnd.exe:
 	gcc pci/init.c -o pci_init.o -c -D PCI_OS_DJGPP -D PCI_HAVE_PM_INTEL_CONF

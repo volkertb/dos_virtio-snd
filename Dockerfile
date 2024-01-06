@@ -1,4 +1,8 @@
-# syntax=docker/dockerfile:1
+# SPDX-FileType: SOURCE
+# SPDX-FileCopyrightText: Copyright (C) 2024 Volkert de Buisonjé
+# SPDX-FileContributor: Volkert de Buisonjé
+# SPDX-License-Identifier: Apache-2.0
+
 FROM ghcr.io/volkertb/debian-djgpp:v0.2 as builder
 
 COPY . /src

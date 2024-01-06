@@ -1,6 +1,9 @@
-//
-// Created by volkert on 1/5/24.
-//
+/*
+ * SPDX-FileType: SOURCE
+ * SPDX-FileCopyrightText: Copyright (C) 2024 Volkert de Buisonjé
+ * SPDX-FileContributor: Volkert de Buisonjé
+ * SPDX-License-Identifier: Apache-2.0
+ */
 
 #ifndef DOS_VIRTIO_SND_TYPES_H
 #define DOS_VIRTIO_SND_TYPES_H

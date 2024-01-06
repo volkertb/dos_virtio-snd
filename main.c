@@ -1,3 +1,10 @@
+/*
+ * SPDX-FileType: SOURCE
+ * SPDX-FileCopyrightText: Copyright (C) 2024 Volkert de Buisonjé
+ * SPDX-FileContributor: Volkert de Buisonjé
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 #include <stdio.h>
 #include <stdint.h>
 #include "types.h"

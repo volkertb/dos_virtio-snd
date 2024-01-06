@@ -1,6 +1,8 @@
-//
-// Created by volkert on 1/4/24.
-//
+/*
+ * SPDX-FileCopyrightText: Copyright © OASIS Open 2023. All Rights Reserved.
+ *
+ * Definitions copied from https://docs.oasis-open.org/virtio/virtio/v1.3/csd01/virtio-v1.3-csd01.html#x1-56700014
+ */
 
 #ifndef VIRTIO_H
 #define VIRTIO_H
@@ -16,9 +18,10 @@ struct virtio_snd_config {
     le32 controls;
 };
 
-/**
+/*
  * 5.14.6 Device Operation
  */
+
 enum {
     /* jack control request types */
     VIRTIO_SND_R_JACK_INFO = 1,
@@ -78,9 +81,10 @@ enum {
     VIRTIO_SND_D_INPUT
 };
 
-/**
+/*
  * 5.14.6.1 Item Information Request
  */
+
 struct virtio_snd_query_info {
     struct virtio_snd_hdr hdr;
     le32 start_id;
@@ -100,9 +104,10 @@ struct virtio_snd_jack_hdr {
     le32 jack_id;
 };
 
-/**
+/*
  * 5.14.6.4.1 VIRTIO_SND_R_JACK_INFO
  */
+
 /* supported jack features */
 enum {
     VIRTIO_SND_JACK_F_REMAP = 0
@@ -394,6 +399,7 @@ struct virtio_snd_ctl_tlv {
 /*
  * 5.14.6.10.4 Notifications
  */
+
 enum {
     VIRTIO_SND_CTL_EVT_MASK_VALUE = 0,
     VIRTIO_SND_CTL_EVT_MASK_INFO,
