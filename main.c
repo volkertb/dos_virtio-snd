@@ -37,7 +37,6 @@ int detect_and_list_pci_devices() {
     struct pci_access *pacc;
     struct pci_dev *dev;
     unsigned int c;
-    char namebuf[1024], *name;
 
     pacc = pci_alloc();		/* Get the pci_access structure */
     /* Set all options you want -- here we stick with the defaults */
@@ -51,9 +50,8 @@ int detect_and_list_pci_devices() {
         printf("%04x:%02x:%02x.%d vendor=%04x device=%04x class=%04x irq=%d (pin %d) base0=%lx",
                dev->domain, dev->bus, dev->dev, dev->func, dev->vendor_id, dev->device_id,
                dev->device_class, dev->irq, c, (long) dev->base_addr[0]);
-        /* Look up and print the full name of the device */
-        name = pci_lookup_name(pacc, namebuf, sizeof(namebuf), PCI_LOOKUP_DEVICE, dev->vendor_id, dev->device_id);
-        printf(" (%s)\n", name);
+
+        printf("\n");
 
         if (dev->vendor_id == PCI_VENDOR_ID_VIRTIO) {
             if (dev->device_id == PCI_DEVICE_ID_VIRTIO_SND) {
